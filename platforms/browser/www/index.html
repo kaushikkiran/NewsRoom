@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>News Room</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark shadow">
+        <h4 class="navbar-text">News Room</h4>
+    </nav>
+    <div class="jumbotron">
+        <h3>Welcome to News Room</h3>
+        <br>
+        <p id="timeDisplay"></p>
+        <p id="dateDisplay"></p>
+    </div>
+    <button type="button" onclick="window.location.href='newsroom.html'" class="btn btn-info ml-3">Go to News Page</button>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        var d = new Date();
+        $("#timeDisplay").text("Now the time is " + d.getHours() + ":" + d.getMinutes());
+        $("#dateDisplay").text("Today is " + d.toDateString());
+    </script>
+</body>
+</html>

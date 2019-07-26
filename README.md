@@ -1,4 +1,6 @@
-# A Blank PhoneGap App
+# News Room App - Blank PhoneGap Template
+
+# Main Technologies - jQuery and Bootstrap4
 
 ## Usage
 
